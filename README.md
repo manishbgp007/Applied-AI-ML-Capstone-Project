@@ -32,7 +32,7 @@
 ## Q: 1
 ### Part 1 — Data Acquisition, Cleaning, and Exploratory Analysis
 
-#### Task 1: Dataset Inspection
+### Task 1: Dataset Inspection
 The first step of the project was to inspect the dataset to understand its overall structure, quality, and suitability for machine learning. A thorough inspection helps identify potential issues before data preprocessing and model development.
 
 * **Loading the Dataset**
@@ -50,7 +50,7 @@ The first step of the project was to inspect the dataset to understand its overa
 * **Initial Dataset Assessment**
   * The inspection process confirmed that the dataset was successfully loaded and contained the expected number of features and observations. It also provided an initial understanding of the dataset's structure, allowing potential issues such as incorrect data types, missing values, or formatting inconsistencies to be identified before proceeding to data cleaning and exploratory data analysis.
 
-#### Task 2: Null Value Analysis
+### Task 2: Null Value Analysis
 
 Missing value analysis was performed to identify incomplete or unavailable data within the dataset. Handling missing values is an important preprocessing step because they can negatively affect the performance and accuracy of machine learning models.
 
@@ -72,7 +72,7 @@ Missing value analysis was performed to identify incomplete or unavailable data 
   * After imputing the missing values in the eligible numeric columns, the dataset became more complete and suitable for further preprocessing, exploratory data analysis, feature engineering, and machine learning model development.
  
 
-#### Task 3: Duplicate Detection and Removal
+### Task 3: Duplicate Detection and Removal
 
 Duplicate records were analyzed to ensure the dataset contained only unique observations. Duplicate rows can introduce bias into data analysis and machine learning models by giving unnecessary weight to repeated information. Therefore, identifying and removing duplicates is an essential step in the data cleaning process.
 
@@ -92,7 +92,7 @@ Duplicate records were analyzed to ensure the dataset contained only unique obse
   * The duplicate detection and removal process improved the overall quality and reliability of the dataset by eliminating redundant records. The cleaned dataset became more suitable for exploratory data analysis, feature engineering, and machine learning model training, reducing the risk of biased results caused by repeated observations.
 
 
-#### Task 4: Data Type Correction
+### Task 4: Data Type Correction
 
 Data type correction was performed to ensure that each column had the most appropriate data type for analysis and machine learning. Incorrect data types can lead to errors during preprocessing, increase memory usage, and reduce computational efficiency. Therefore, verifying and correcting data types is an important step in data preparation.
 
