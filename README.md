@@ -1,7 +1,9 @@
 # **Applied-AI-ML-Capstone-Project**
 
+## Housing Value Prediction Project
+
 ### Project Description
-* This project is part of the AI & ML Capstone, where the goal is to build an end-to-end data intelligence system. It covers four stages.
+* This project is part of the Applied-AI-ML-Capstone-Project, where the goal is to build an end-to-end data intelligence system. It covers four stages.
 
 ### Data ingestion & exploratory analysis
 * Supervised machine learning
