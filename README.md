@@ -288,3 +288,34 @@ The identified feature pairs were interpreted based on their correlation values:
 
 * **Outcome**
   * The comparison between Pearson and Spearman correlation provided valuable insights into the nature of the relationships among numeric variables. It highlighted feature pairs with non-linear but monotonic associations and supported the decision to use Spearman correlation for more reliable feature selection in the next phase of the machine learning pipeline.
+ 
+
+### Task 9c: Grouped Aggregation Analysis
+
+Grouped aggregation was performed to analyze how the values of a numeric feature vary across different categories. This analysis helps identify whether a categorical feature has predictive power by comparing the statistical characteristics of each group.
+
+* **Grouping the Data**
+A categorical column was selected and used to group the dataset. For each category, a numeric column was aggregated using the `groupby()` function. The following summary statistics were calculated:
+  * **Mean:** The average value of the numeric feature within each category.
+  * **Standard Deviation (Std):** The amount of variation or spread of the numeric values within each category.
+  * **Count:** The total number of observations belonging to each category.
+These statistics provided a comprehensive summary of the distribution of the numeric feature across different groups.
+
+* **Identifying Key Groups**
+  * The grouped summary was examined to identify:
+    * The category with the **highest mean**, representing the group with the largest average value of the numeric feature.
+    * The category with the **highest standard deviation**, indicating the group with the greatest variability in its observations.
+These findings helped determine which categories showed the strongest average performance and which exhibited the greatest inconsistency.
+
+* **Interpretation of High Within-Group Variance**
+  * Groups with a high standard deviation contain observations that are widely spread around the mean. High within-group variance may indicate greater diversity within that category, making its values more difficult to predict accurately. In predictive modeling, such groups may contribute to increased prediction errors because observations within the same category are less consistent.
+
+* **Calculating the Mean Ratio**
+  * To evaluate the predictive strength of the categorical feature, the ratio of the **highest group mean** to the **lowest group mean** was calculated.
+  * **Mean Ratio = Highest Group Mean / Lowest Group Mean**
+
+  * A large ratio suggests that the categories differ substantially in their average values, indicating that the categorical feature may contain useful predictive information for machine learning models. Conversely, a ratio close to 1 implies that the categories are similar and may contribute less predictive value.
+
+* **Outcome**
+  * The grouped aggregation analysis demonstrated how the numeric feature varied across different categories. By comparing the mean, standard deviation, and observation count for each group, the analysis highlighted important differences between categories. The calculated mean ratio further indicated whether the categorical variable possesses a meaningful predictive signal, making it a valuable candidate for feature engineering and model development in the next phase of the project.
+
