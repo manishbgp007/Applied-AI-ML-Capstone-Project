@@ -189,7 +189,7 @@ Data visualization was performed to better understand the distribution, trends, 
   * A **line plot** was created for a selected numeric variable to observe how its values change across the dataset. This visualization helped identify overall trends, fluctuations, and any noticeable increases or decreases in the values. It also made it easier to detect unusual patterns or sudden changes in the data.
 
 * **Bar Chart**
-  *A **bar chart** was generated to compare the **mean values** of a numeric variable across different categories. This plot clearly illustrated the differences between groups and helped identify which category had the highest or lowest average value. The visualization provided a simple comparison of categorical data.
+  * A **bar chart** was generated to compare the **mean values** of a numeric variable across different categories. This plot clearly illustrated the differences between groups and helped identify which category had the highest or lowest average value. The visualization provided a simple comparison of categorical data.
 
 * **Histogram**
   * A **histogram** was created for the numeric column with the highest absolute skewness. This plot showed the frequency distribution of the data and revealed whether the variable was normally distributed, positively skewed, or negatively skewed. The histogram also helped identify the presence of outliers and the overall spread of the data.
