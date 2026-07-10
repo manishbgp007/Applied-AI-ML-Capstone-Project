@@ -181,3 +181,33 @@ Any observation with a value below the lower bound or above the upper bound was 
 * **Outcome**
   * The IQR-based outlier analysis successfully identified extreme observations while preserving the integrity of the original dataset. This approach ensures that the data remains complete during the initial exploration phase and allows informed decisions about outlier treatment in later stages of the project.
 
+
+### Task 7: Data Visualization
+Data visualization was performed to better understand the distribution, trends, relationships, and patterns within the dataset. Visual representations make it easier to identify important insights that may not be obvious from numerical summaries alone. Five different types of plots were created as required by the project.
+
+* **Line Plot**
+  * A **line plot** was created for a selected numeric variable to observe how its values change across the dataset. This visualization helped identify overall trends, fluctuations, and any noticeable increases or decreases in the values. It also made it easier to detect unusual patterns or sudden changes in the data.
+
+* **Bar Chart**
+  *A **bar chart** was generated to compare the **mean values** of a numeric variable across different categories. This plot clearly illustrated the differences between groups and helped identify which category had the highest or lowest average value. The visualization provided a simple comparison of categorical data.
+
+* **Histogram**
+  * A **histogram** was created for the numeric column with the highest absolute skewness. This plot showed the frequency distribution of the data and revealed whether the variable was normally distributed, positively skewed, or negatively skewed. The histogram also helped identify the presence of outliers and the overall spread of the data.
+
+* **Scatter Plot**
+  * A **scatter plot** was produced using two correlated numeric variables to examine the relationship between them. The plot helped determine whether a positive, negative, or weak correlation existed between the selected features. It also allowed the identification of clusters, trends, and potential outliers within the data.
+
+* **Box Plot**
+  *A **box plot** was created for a numeric variable grouped by a categorical variable. This visualization displayed the median, quartiles, spread of the data, and potential outliers for each category. Comparing multiple box plots provided insights into differences in data distribution among the categories.
+
+* **Interpretation of Visualizations** :-
+Each visualization was carefully analyzed and explained in the README. The interpretations focused on:
+  * Identifying trends and patterns in the data.
+  * Comparing average values across categories.
+  * Understanding the distribution of numeric variables.
+  * Detecting skewness and possible outliers.
+  * Examining relationships between correlated features.
+  * Comparing the spread and variability of data across different groups.
+
+* **Outcome**
+  * The visualizations provided valuable insights into the dataset and supported the findings from descriptive statistics and exploratory data analysis. They improved the understanding of feature distributions, relationships, and data quality, forming a strong foundation for feature engineering and machine learning model development in the subsequent parts of the project.
