@@ -161,23 +161,22 @@ For each selected numeric column, the following statistical measures were calcul
   * **First Quartile (Q1):** The 25th percentile of the data.
   * **Third Quartile (Q3):** The 75th percentile of the data.
   * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
-
+  
   **IQR = Q3 − Q1**
+  
 The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
 * **Identifying Outliers**
-
 The lower and upper bounds were calculated using the standard IQR formula:
-
   * **Lower Bound = Q1 − 1.5 × IQR**
   * **Upper Bound = Q3 + 1.5 × IQR**
-
+    
 Any observation with a value below the lower bound or above the upper bound was considered an outlier. The total number of outliers identified in each selected column was calculated and documented.
 
 * **Decision on Outlier Handling**
-  *Although outliers were detected, they were **not removed** during Part 1 of the project. Removing outliers without careful analysis can lead to the loss of important information, especially if the extreme values represent genuine observations rather than data entry errors.
+  * Although outliers were detected, they were **not removed** during Part 1 of the project. Removing outliers without careful analysis can lead to the loss of important information, especially if the extreme values represent genuine observations rather than data entry errors.
 
 * **Future Strategy**
-** The detected outliers were documented for future preprocessing. In **Part 2**, advanced techniques such as **outlier capping (Winsorization), transformation, scaling, or other robust preprocessing methods** will be considered based on their impact on the machine learning models.
+  * The detected outliers were documented for future preprocessing. In **Part 2**, advanced techniques such as **outlier capping (Winsorization), transformation, scaling, or other robust preprocessing methods** will be considered based on their impact on the machine learning models.
 
 * **Outcome**
   * The IQR-based outlier analysis successfully identified extreme observations while preserving the integrity of the original dataset. This approach ensures that the data remains complete during the initial exploration phase and allows informed decisions about outlier treatment in later stages of the project.
