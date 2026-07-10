@@ -262,3 +262,29 @@ An imputation strategy comparison was performed to determine the most appropriat
 
 * **Outcome**
   * The comparison between mean and median demonstrated that the **median** is a more robust and reliable imputation strategy for skewed numeric data. The selected columns were successfully imputed, improving data quality while preserving the original characteristics of the dataset.
+
+
+### Task 9b: Spearman vs Pearson Correlation Analysis
+To better understand the relationships between numeric features, both **Pearson** and **Spearman** correlation coefficients were calculated and compared. This comparison helped identify whether the relationships between variables were linear or monotonic and provided valuable guidance for feature selection in the next stage of the project.
+
+* **Computing Pearson Correlation**
+   * The Pearson correlation coefficient was calculated using the `corr(method='pearson')` function. Pearson correlation measures the strength and direction of a **linear relationship** between two continuous variables. The coefficient ranges from **-1 to +1**, where values close to ±1 indicate a strong linear relationship and values close to 0 indicate little or no linear relationship.
+
+* **Computing Spearman Correlation**
+  * The Spearman rank correlation coefficient was calculated using the `corr(method='spearman')` function. Unlike Pearson correlation, Spearman correlation measures the strength of a **monotonic relationship**, whether it is linear or non-linear. Since it is based on ranked values, it is less sensitive to outliers and skewed data.
+
+* **Comparing Pearson and Spearman Correlations**
+  * The absolute difference between the Pearson and Spearman correlation coefficients was calculated for every pair of numeric features. The **three column pairs with the largest absolute differences** (|Spearman − Pearson|) were identified and examined in detail.
+  * A large difference between the two correlation measures suggests that the relationship between the variables is not purely linear. In such cases, Spearman correlation may capture a strong monotonic relationship that Pearson correlation fails to detect.
+
+* **Interpretation of the Results**    
+The identified feature pairs were interpreted based on their correlation values:
+  * If both Pearson and Spearman coefficients were similar, the relationship was considered **approximately linear**.
+  * If the Spearman coefficient was significantly higher than the Pearson coefficient, the relationship was interpreted as **monotonic but non-linear**.
+  * These findings provided a deeper understanding of the interactions among the dataset features.
+
+* **Choosing Spearman for Feature Selection**
+  * Based on the comparison, **Spearman correlation** was selected as the preferred method for guiding feature selection in **Part 2** of the project. Since many real-world datasets contain skewed distributions, outliers, and non-linear relationships, Spearman correlation provides a more robust measure of association than Pearson correlation in such situations. It can identify meaningful monotonic relationships that might otherwise be overlooked.
+
+* **Outcome**
+  * The comparison between Pearson and Spearman correlation provided valuable insights into the nature of the relationships among numeric variables. It highlighted feature pairs with non-linear but monotonic associations and supported the decision to use Spearman correlation for more reliable feature selection in the next phase of the machine learning pipeline.
