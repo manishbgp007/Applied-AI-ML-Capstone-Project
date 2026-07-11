@@ -56,7 +56,7 @@ Missing value analysis was performed to identify incomplete or unavailable data 
 
 * **Calculating Missing Values**
   * The number of missing values in each column was calculated using the `df.isnull().sum()` function. To better understand the extent of missing data, the percentage of missing values was also computed using the following formula:
-  * **Missing Value Percentage = (Number of Missing Values / Total Number of Rows) × 100**
+    * **Missing Value Percentage = (Number of Missing Values / Total Number of Rows) × 100**
   * This analysis helped identify which columns contained missing data and the severity of the missing values.
 
 * **Identifying Columns with High Missing Values**
@@ -117,15 +117,15 @@ Data type correction was performed to ensure that each column had the most appro
 Descriptive statistics and skewness analysis were performed to understand the distribution, central tendency, variability, and shape of the numeric features in the dataset. This analysis provided valuable insights into the characteristics of the data and helped determine appropriate preprocessing techniques.
 
 * **Generating Descriptive Statistics** :- 
-The `df.describe()` function was used to generate summary statistics for all numeric columns. The output included the following statistical measures:
-  * **Count:** Number of non-missing observations.
-  * **Mean:** Average value of the feature.
-  * **Standard Deviation (Std):** Measure of data variability.
-  * **Minimum (Min):** Smallest value in the column.
-  * **25th Percentile (Q1):** First quartile.
-  * **50th Percentile (Median):** Middle value of the dataset.
-  * **75th Percentile (Q3):** Third quartile.
-  * **Maximum (Max):** Largest value in the column.
+  * The `df.describe()` function was used to generate summary statistics for all numeric columns. The output included the following statistical measures:
+    * **Count:** Number of non-missing observations.
+    * **Mean:** Average value of the feature.
+    * **Standard Deviation (Std):** Measure of data variability.
+    * **Minimum (Min):** Smallest value in the column.
+    * **25th Percentile (Q1):** First quartile.
+    * **50th Percentile (Median):** Middle value of the dataset.
+    * **75th Percentile (Q3):** Third quartile.
+    * **Maximum (Max):** Largest value in the column.
     
 These statistics provided an overall understanding of the dataset and helped identify unusual values or potential outliers.
 
@@ -133,7 +133,6 @@ These statistics provided an overall understanding of the dataset and helped ide
   * The skewness of each numeric column was calculated using the `df.skew()` function. Skewness measures the degree of asymmetry in the distribution of data around its mean. The column with the highest absolute skewness was identified because it represents the most unevenly distributed feature in the dataset.
 
 * **Interpretation of Skewness**
-
 * The skewness values were interpreted as follows:
   * **Positive Skewness:** The distribution has a long right tail, and the mean is generally greater than the median.
   * **Negative Skewness:** The distribution has a long left tail, and the mean is generally smaller than the median.
@@ -150,27 +149,21 @@ These statistics provided an overall understanding of the dataset and helped ide
  
 
 #### Task 6: Outlier Detection Using the Interquartile Range (IQR)
-
-Outlier detection was performed to identify unusually high or low values in the dataset that could influence statistical analysis and machine learning model performance. Instead of removing outliers immediately, they were carefully analyzed and documented for future preprocessing.
-
-* **Selecting Numeric Columns**
-Two important numeric columns were selected for outlier analysis. These features were chosen because they play a significant role in understanding the distribution of the data and may contain extreme values.
-
-* **Calculating Q1, Q3, and IQR**
-For each selected numeric column, the following statistical measures were calculated:
-  * **First Quartile (Q1):** The 25th percentile of the data.
-  * **Third Quartile (Q3):** The 75th percentile of the data.
-  * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
-  
+  * Outlier detection was performed to identify unusually high or low values in the dataset that could influence statistical analysis and machine learning model performance. Instead of removing outliers immediately, they were carefully analyzed and documented for future preprocessing.
+  * **Selecting Numeric Columns**
+    * Two important numeric columns were selected for outlier analysis. These features were chosen because they play a significant role in understanding the distribution of the data and may contain extreme values.
+  * **Calculating Q1, Q3, and IQR**
+    * For each selected numeric column, the following statistical measures were calculated:
+    * **First Quartile (Q1):** The 25th percentile of the data.
+    * **Third Quartile (Q3):** The 75th percentile of the data.
+    * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
     * **IQR = Q3 − Q1**
-  
-The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
-* **Identifying Outliers**
-The lower and upper bounds were calculated using the standard IQR formula:
-  * **Lower Bound = Q1 − 1.5 × IQR**
-  * **Upper Bound = Q3 + 1.5 × IQR**
-    
-Any observation with a value below the lower bound or above the upper bound was considered an outlier. The total number of outliers identified in each selected column was calculated and documented.
+    * The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
+  * **Identifying Outliers**
+  * The lower and upper bounds were calculated using the standard IQR formula:
+    * **Lower Bound = Q1 − 1.5 × IQR**
+    * **Upper Bound = Q3 + 1.5 × IQR**
+  * Any observation with a value below the lower bound or above the upper bound was considered an outlier. The total number of outliers identified in each selected column was calculated and documented.
 
 * **Decision on Outlier Handling**
   * Although outliers were detected, they were **not removed** during Part 1 of the project. Removing outliers without careful analysis can lead to the loss of important information, especially if the extreme values represent genuine observations rather than data entry errors.
@@ -183,7 +176,7 @@ Any observation with a value below the lower bound or above the upper bound was 
 
 
 #### Task 7: Data Visualization
-Data visualization was performed to better understand the distribution, trends, relationships, and patterns within the dataset. Visual representations make it easier to identify important insights that may not be obvious from numerical summaries alone. Five different types of plots were created as required by the project.
+  * Data visualization was performed to better understand the distribution, trends, relationships, and patterns within the dataset. Visual representations make it easier to identify important insights that may not be obvious from numerical summaries alone. Five different types of plots were created as required by the project.
 
 * **Line Plot**
   * A **line plot** was created for a selected numeric variable to observe how its values change across the dataset. This visualization helped identify overall trends, fluctuations, and any noticeable increases or decreases in the values. It also made it easier to detect unusual patterns or sudden changes in the data.
@@ -196,12 +189,11 @@ Data visualization was performed to better understand the distribution, trends, 
 
 * **Scatter Plot**
   * A **scatter plot** was produced using two correlated numeric variables to examine the relationship between them. The plot helped determine whether a positive, negative, or weak correlation existed between the selected features. It also allowed the identification of clusters, trends, and potential outliers within the data.
-
 * **Box Plot**
   *A **box plot** was created for a numeric variable grouped by a categorical variable. This visualization displayed the median, quartiles, spread of the data, and potential outliers for each category. Comparing multiple box plots provided insights into differences in data distribution among the categories.
 
 * **Interpretation of Visualizations** :-
-Each visualization was carefully analyzed and explained in the README. The interpretations focused on:
+  * Each visualization was carefully analyzed and explained in the README. The interpretations focused on:
   * Identifying trends and patterns in the data.
   * Comparing average values across categories.
   * Understanding the distribution of numeric variables.
@@ -222,7 +214,6 @@ Correlation analysis was performed to measure the strength and direction of rela
     * **+1** indicates a perfect positive correlation.
     * **-1** indicates a perfect negative correlation.
     * **0** indicates no linear relationship between the variables.
-
 This matrix provided a numerical summary of the relationships among all numeric features.
 
 * **Visualizing the Correlation Heatmap**
