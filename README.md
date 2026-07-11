@@ -155,11 +155,12 @@ Descriptive statistics and skewness analysis were performed to understand the di
 
 * **Calculating Q1, Q3, and IQR**
   * For each selected numeric column, the following statistical measures were calculated:
-  * **First Quartile (Q1):** The 25th percentile of the data.
-  * **Third Quartile (Q3):** The 75th percentile of the data.
-  * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
-  * **IQR = Q3 − Q1**
-  * The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
+    * **First Quartile (Q1):** The 25th percentile of the data.
+    * **Third Quartile (Q3):** The 75th percentile of the data.
+    * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
+    * **IQR = Q3 − Q1**
+    * The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
+
 * **Identifying Outliers**
   * The lower and upper bounds were calculated using the standard IQR formula:
     * **Lower Bound = Q1 − 1.5 × IQR**
@@ -190,17 +191,18 @@ Descriptive statistics and skewness analysis were performed to understand the di
 
 * **Scatter Plot**
   * A **scatter plot** was produced using two correlated numeric variables to examine the relationship between them. The plot helped determine whether a positive, negative, or weak correlation existed between the selected features. It also allowed the identification of clusters, trends, and potential outliers within the data.
+ 
 * **Box Plot**
-  *A **box plot** was created for a numeric variable grouped by a categorical variable. This visualization displayed the median, quartiles, spread of the data, and potential outliers for each category. Comparing multiple box plots provided insights into differences in data distribution among the categories.
+  * A **box plot** was created for a numeric variable grouped by a categorical variable. This visualization displayed the median, quartiles, spread of the data, and potential outliers for each category. Comparing multiple box plots provided insights into differences in data distribution among the categories.
 
 * **Interpretation of Visualizations**
   * Each visualization was carefully analyzed and explained in the README. The interpretations focused on:
-  * Identifying trends and patterns in the data.
-  * Comparing average values across categories.
-  * Understanding the distribution of numeric variables.
-  * Detecting skewness and possible outliers.
-  * Examining relationships between correlated features.
-  * Comparing the spread and variability of data across different groups.
+    * Identifying trends and patterns in the data.
+    * Comparing average values across categories.
+    * Understanding the distribution of numeric variables.
+    * Detecting skewness and possible outliers.
+    * Examining relationships between correlated features.
+    * Comparing the spread and variability of data across different groups.
 
 * **Outcome**
   * The visualizations provided valuable insights into the dataset and supported the findings from descriptive statistics and exploratory data analysis. They improved the understanding of feature distributions, relationships, and data quality, forming a strong foundation for feature engineering and machine learning model development in the subsequent parts of the project.
