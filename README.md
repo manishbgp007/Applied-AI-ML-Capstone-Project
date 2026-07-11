@@ -218,10 +218,10 @@ Each visualization was carefully analyzed and explained in the README. The inter
 Correlation analysis was performed to measure the strength and direction of relationships between the numeric variables in the dataset. The Pearson correlation coefficient was calculated for all numeric features, and the results were visualized using a correlation heatmap. This analysis helped identify highly correlated features that may influence machine learning models and feature selection.
 
 * **Computing the Correlation Matrix**  
-The Pearson correlation matrix was calculated using the `df.corr()` function. The correlation coefficient ranges from **-1 to +1**, where:
-  * **+1** indicates a perfect positive correlation.
-  * **-1** indicates a perfect negative correlation.
-  * **0** indicates no linear relationship between the variables.
+  * The Pearson correlation matrix was calculated using the `df.corr()` function. The correlation coefficient ranges from **-1 to +1**, where:
+    * **+1** indicates a perfect positive correlation.
+    * **-1** indicates a perfect negative correlation.
+    * **0** indicates no linear relationship between the variables.
 
 This matrix provided a numerical summary of the relationships among all numeric features.
 
