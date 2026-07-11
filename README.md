@@ -126,17 +126,16 @@ Descriptive statistics and skewness analysis were performed to understand the di
     * **50th Percentile (Median):** Middle value of the dataset.
     * **75th Percentile (Q3):** Third quartile.
     * **Maximum (Max):** Largest value in the column.
-    
-These statistics provided an overall understanding of the dataset and helped identify unusual values or potential outliers.
+ These statistics provided an overall understanding of the dataset and helped identify unusual values or potential outliers.
 
 * **Computing Skewness**
   * The skewness of each numeric column was calculated using the `df.skew()` function. Skewness measures the degree of asymmetry in the distribution of data around its mean. The column with the highest absolute skewness was identified because it represents the most unevenly distributed feature in the dataset.
 
 * **Interpretation of Skewness**
-* The skewness values were interpreted as follows:
-  * **Positive Skewness:** The distribution has a long right tail, and the mean is generally greater than the median.
-  * **Negative Skewness:** The distribution has a long left tail, and the mean is generally smaller than the median.
-  * **Skewness Close to Zero:** The distribution is approximately symmetric, indicating that the mean and median are relatively close.
+  * The skewness values were interpreted as follows:
+    * **Positive Skewness:** The distribution has a long right tail, and the mean is generally greater than the median.
+    * **Negative Skewness:** The distribution has a long left tail, and the mean is generally smaller than the median.
+    * **Skewness Close to Zero:** The distribution is approximately symmetric, indicating that the mean and median are relatively close.
 
 * **Importance of Skewness Analysis**
   * Understanding skewness is important because highly skewed data can influence statistical analysis and machine learning model performance. Features with large positive or negative skewness may require transformations or robust preprocessing techniques before model training.
@@ -150,20 +149,22 @@ These statistics provided an overall understanding of the dataset and helped ide
 
 #### Task 6: Outlier Detection Using the Interquartile Range (IQR)
   * Outlier detection was performed to identify unusually high or low values in the dataset that could influence statistical analysis and machine learning model performance. Instead of removing outliers immediately, they were carefully analyzed and documented for future preprocessing.
-  * **Selecting Numeric Columns**
-    * Two important numeric columns were selected for outlier analysis. These features were chosen because they play a significant role in understanding the distribution of the data and may contain extreme values.
-  * **Calculating Q1, Q3, and IQR**
-    * For each selected numeric column, the following statistical measures were calculated:
-    * **First Quartile (Q1):** The 25th percentile of the data.
-    * **Third Quartile (Q3):** The 75th percentile of the data.
-    * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
-    * **IQR = Q3 − Q1**
-    * The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
-  * **Identifying Outliers**
+
+* **Selecting Numeric Columns**
+  * Two important numeric columns were selected for outlier analysis. These features were chosen because they play a significant role in understanding the distribution of the data and may contain extreme values.
+
+* **Calculating Q1, Q3, and IQR**
+  * For each selected numeric column, the following statistical measures were calculated:
+  * **First Quartile (Q1):** The 25th percentile of the data.
+  * **Third Quartile (Q3):** The 75th percentile of the data.
+  * **Interquartile Range (IQR):** The spread of the middle 50% of the data, calculated as:
+  * **IQR = Q3 − Q1**
+  * The IQR method is a widely used and robust technique for detecting outliers because it is less affected by extreme values than methods based on the mean and standard deviation.
+* **Identifying Outliers**
   * The lower and upper bounds were calculated using the standard IQR formula:
     * **Lower Bound = Q1 − 1.5 × IQR**
     * **Upper Bound = Q3 + 1.5 × IQR**
-  * Any observation with a value below the lower bound or above the upper bound was considered an outlier. The total number of outliers identified in each selected column was calculated and documented.
+    * Any observation with a value below the lower bound or above the upper bound was considered an outlier. The total number of outliers identified in each selected column was calculated and documented.
 
 * **Decision on Outlier Handling**
   * Although outliers were detected, they were **not removed** during Part 1 of the project. Removing outliers without careful analysis can lead to the loss of important information, especially if the extreme values represent genuine observations rather than data entry errors.
@@ -192,7 +193,7 @@ These statistics provided an overall understanding of the dataset and helped ide
 * **Box Plot**
   *A **box plot** was created for a numeric variable grouped by a categorical variable. This visualization displayed the median, quartiles, spread of the data, and potential outliers for each category. Comparing multiple box plots provided insights into differences in data distribution among the categories.
 
-* **Interpretation of Visualizations** :-
+* **Interpretation of Visualizations**
   * Each visualization was carefully analyzed and explained in the README. The interpretations focused on:
   * Identifying trends and patterns in the data.
   * Comparing average values across categories.
