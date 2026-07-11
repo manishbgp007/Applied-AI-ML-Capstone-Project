@@ -1,6 +1,8 @@
 # **Applied-AI-ML-Capstone-Project**
-
+____________________________________
 ## Housing Value Prediction Project
+------------------------------------
+
 
 ### Project Description
 * This project is part of the Applied-AI-ML-Capstone-Project, where the goal is to build an end-to-end data intelligence system. It covers four stages.
@@ -20,7 +22,7 @@
   * Target variable MedHouseVal is continuous, suitable for regression, and can be binarized for classification tasks.
   * Publicly available and widely used for benchmarking ML models.
 
-* Technologies Used
+* **Technologies Used**
   * Python 3.9+
   * Google Colab
   * Pandas for data manipulation
@@ -30,8 +32,9 @@
 
 
 ## Q: 1
+_________
 ### Part 1 — Data Acquisition, Cleaning, and Exploratory Analysis
-
+__________________________________________________________________
 #### Task 1: Dataset Inspection
 The first step of the project was to inspect the dataset to understand its overall structure, quality, and suitability for machine learning. A thorough inspection helps identify potential issues before data preprocessing and model development.
 
