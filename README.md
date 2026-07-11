@@ -76,7 +76,7 @@ Missing value analysis was performed to identify incomplete or unavailable data 
  
 
 #### Task 3: Duplicate Detection and Removal
-
+_____________________________________________
 Duplicate records were analyzed to ensure the dataset contained only unique observations. Duplicate rows can introduce bias into data analysis and machine learning models by giving unnecessary weight to repeated information. Therefore, identifying and removing duplicates is an essential step in the data cleaning process.
 
 * **Detecting Duplicate Rows**
@@ -96,7 +96,7 @@ Duplicate records were analyzed to ensure the dataset contained only unique obse
 
 
 #### Task 4: Data Type Correction
-
+___________________________________
 Data type correction was performed to ensure that each column had the most appropriate data type for analysis and machine learning. Incorrect data types can lead to errors during preprocessing, increase memory usage, and reduce computational efficiency. Therefore, verifying and correcting data types is an important step in data preparation.
 
 * **Identifying Incorrect Data Types**
@@ -116,7 +116,7 @@ Data type correction was performed to ensure that each column had the most appro
 
 
 #### Task 5: Descriptive Statistics and Skewness Analysis
-
+__________________________________________________________
 Descriptive statistics and skewness analysis were performed to understand the distribution, central tendency, variability, and shape of the numeric features in the dataset. This analysis provided valuable insights into the characteristics of the data and helped determine appropriate preprocessing techniques.
 
 * **Generating Descriptive Statistics** :- 
@@ -129,6 +129,7 @@ Descriptive statistics and skewness analysis were performed to understand the di
     * **50th Percentile (Median):** Middle value of the dataset.
     * **75th Percentile (Q3):** Third quartile.
     * **Maximum (Max):** Largest value in the column.
+   
  These statistics provided an overall understanding of the dataset and helped identify unusual values or potential outliers.
 
 * **Computing Skewness**
@@ -151,6 +152,7 @@ Descriptive statistics and skewness analysis were performed to understand the di
  
 
 #### Task 6: Outlier Detection Using the Interquartile Range (IQR)
+___________________________________________________________________
   * Outlier detection was performed to identify unusually high or low values in the dataset that could influence statistical analysis and machine learning model performance. Instead of removing outliers immediately, they were carefully analyzed and documented for future preprocessing.
 
 * **Selecting Numeric Columns**
@@ -181,6 +183,7 @@ Descriptive statistics and skewness analysis were performed to understand the di
 
 
 #### Task 7: Data Visualization
+________________________________
   * Data visualization was performed to better understand the distribution, trends, relationships, and patterns within the dataset. Visual representations make it easier to identify important insights that may not be obvious from numerical summaries alone. Five different types of plots were created as required by the project.
 
 * **Line Plot**
@@ -212,7 +215,7 @@ Descriptive statistics and skewness analysis were performed to understand the di
 
 
 #### Task 8: Correlation Heatmap
-
+_________________________________
 Correlation analysis was performed to measure the strength and direction of relationships between the numeric variables in the dataset. The Pearson correlation coefficient was calculated for all numeric features, and the results were visualized using a correlation heatmap. This analysis helped identify highly correlated features that may influence machine learning models and feature selection.
 
 * **Computing the Correlation Matrix**  
@@ -239,7 +242,7 @@ This matrix provided a numerical summary of the relationships among all numeric 
 
 
 #### Task 9a: Imputation Strategy Comparison
-
+_____________________________________________
 An imputation strategy comparison was performed to determine the most appropriate method for handling missing values in the two most skewed numeric columns. Since skewed data can significantly influence the mean, both the **mean** and **median** were evaluated before selecting the final imputation strategy.
 
 * **Identifying the Most Skewed Columns**
@@ -262,6 +265,7 @@ An imputation strategy comparison was performed to determine the most appropriat
 
 
 #### Task 9b: Spearman vs Pearson Correlation Analysis
+_______________________________________________________
 To better understand the relationships between numeric features, both **Pearson** and **Spearman** correlation coefficients were calculated and compared. This comparison helped identify whether the relationships between variables were linear or monotonic and provided valuable guidance for feature selection in the next stage of the project.
 
 * **Computing Pearson Correlation**
@@ -288,7 +292,7 @@ The identified feature pairs were interpreted based on their correlation values:
  
 
 #### Task 9c: Grouped Aggregation Analysis
-
+___________________________________________
 Grouped aggregation was performed to analyze how the values of a numeric feature vary across different categories. This analysis helps identify whether a categorical feature has predictive power by comparing the statistical characteristics of each group.
 
 * **Grouping the Data**
@@ -318,6 +322,7 @@ These findings helped determine which categories showed the strongest average pe
 
 
 #### Task 10: Saving the Cleaned Dataset
+_________________________________________
 After completing all data preprocessing tasks, including missing value handling, duplicate removal, data type correction, descriptive statistical analysis, outlier detection, correlation analysis, grouped aggregation, and visualization, the final cleaned dataset was prepared for future use.
 
 ### Exporting the Cleaned Dataset
